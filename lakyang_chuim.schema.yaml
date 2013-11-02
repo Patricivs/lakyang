@@ -57,7 +57,6 @@ speller:
     - erase/^xx$/
     - derive/([aeiouwy])m/$1n/
     - derive/([aeiouwy])([ptk])/$1/
-    - derive/^rh/r/
     - derive/^ji?([aeou]?)/gi$1/
     - derive/^qi?([aeou]?)/ki$1/
     - derive/^xi?([aeou]?)/hi$1/
