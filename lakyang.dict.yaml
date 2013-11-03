@@ -3757,16 +3757,16 @@ use_preset_vocabulary: true
 血	xuet1	
 狘	xuet1	
 靴	xue1	
-決	xue1	0%
-洫	xue1	
-侐	xue1	
-吷	xue1	
-坹	xue1	
-彏	xue1	
-戄	xue1	
-殈	xue1	
-泧	xue1	
-泬	xue1	
+決	xuet1	0%
+洫	xuet1	
+侐	xuet1	
+吷	xuet1	
+坹	xuet1	
+彏	xuet1	
+戄	xuet1	
+殈	xuet1	
+泧	xuet1	
+泬	xuet1	
 淢	xue1	
 烕	xue1	
 焱	xue1	
@@ -13512,7 +13512,6 @@ use_preset_vocabulary: true
 呼	huh	0%
 或	huek2	
 獲	huek2	
-獲	huek2	0%
 穫	huek2	
 咟	huek2	
 嚄	huek2	
@@ -13675,14 +13674,15 @@ use_preset_vocabulary: true
 貆	huan1	
 貛	huan1	
 劃	huak2	
+劃	huek2	
 畫	huak2	
+畫	huek2	
 壊	huai4	
 壞	huai4	
 咶	huai4	
 蘾	huai4	
 回	huai2	0%
 懐	huai2	
-獲	huai2	
 懷	huai2	
 槐	huai2	
 淮	huai2	
@@ -13718,14 +13718,13 @@ use_preset_vocabulary: true
 諣	hua4	
 輠	hua4	
 扮	hua3	0%
-劃	hua2	
 划	hua2	
 蕐	hua2	
 鼃	hua2	
 花	hua1	
 華	hua1	
 嘩	hua1	
-劃	hua1	
+劃	huek1	
 樺	hua1	0%
 崋	hua1	0%
 糀	hua1	
@@ -17443,7 +17442,7 @@ use_preset_vocabulary: true
 蹰	chu2	
 躕	chu2	
 鶵	chu2	
-出來	chu1 lai2	
+出來	chut1 lai2	
 樗	chu1	
 樞	chu1	
 矗	chu1	
