@@ -1959,8 +1959,8 @@ use_preset_vocabulary: true
 篸	zam1	
 糌	zam1	
 鐕	zam1	
-醡	zak4	
-齰	zak4	
+醡	zak1	
+齰	zak1	
 怎	zak2	0%
 厏	zak2	
 痄	zak2	
@@ -2752,8 +2752,8 @@ use_preset_vocabulary: true
 蘥	yo1	
 觷	yo1	
 鸑	yo1	
-撎	yit4	
-餲	yit4	
+撎	yit1	
+餲	yit1	
 逸	yit2	
 釔	yit2	
 一樣	yit1 yang4	
@@ -6743,7 +6743,7 @@ use_preset_vocabulary: true
 水兒	shuw3	
 説	shuot1	
 說	shuot1	
-所	shuok3	10%
+所	shuok1	10%
 勺	shuok2	
 杓	shuok2	
 碩	shuok2	
@@ -6830,7 +6830,7 @@ use_preset_vocabulary: true
 踹	shuan4	
 栓	shuan1	
 閂	shuan1	
-率	shuait4	
+率	shuait1	
 帥	shuai4	
 甩	shuai3	
 衰	shuai1	
@@ -7311,7 +7311,7 @@ use_preset_vocabulary: true
 搔	sau1	
 溞	sau1	
 臊	sau1	
-剎	sat4	
+剎	sat1	
 殺	sat1	
 薩	sat1	
 撒	sat1	
@@ -8503,7 +8503,7 @@ use_preset_vocabulary: true
 虨	pin1	
 品	pim3	
 榀	pim3	
-譬	pik4	
+譬	pik1	
 闢	pik2	
 匹	pik1	
 僻	pik1	
@@ -8889,7 +8889,7 @@ use_preset_vocabulary: true
 眅	pan1	
 㢖	pan1	0%
 𤺏	pan1	0%
-怕	pak4	
+怕	pak1	
 帕	pak2	
 啪	pak1	
 派	pai4	
@@ -10879,8 +10879,8 @@ use_preset_vocabulary: true
 蘢	lyung2	
 霳	lyung2	
 癃	lyung2	
-六個	liuk4 ge4	
-六	liuk4	0%
+六個	liuk1 ge4	
+六	liuk1	0%
 溜	liu4	
 勠	liu4	
 廖	liu4	0%
@@ -10937,8 +10937,8 @@ use_preset_vocabulary: true
 騮	liu2	
 鶹	liu2	
 熘	liu1	
-歴	lit4	
-洌	lit4	
+歴	lit1	
+洌	lit1	
 栗	lit1	
 慄	lit1	
 篥	lit1	
@@ -11099,7 +11099,7 @@ use_preset_vocabulary: true
 霖	lim2	
 瀶	lim2	
 箖	lim2	
-暦	lik4	
+暦	lik1	
 力	lik1	
 仂	lik1	
 擽	lik1	
@@ -15005,8 +15005,8 @@ use_preset_vocabulary: true
 𧿳	fut1	
 𨚓	fut1	
 𩖼	fut1	
-伏	fuk4	
-椱	fuk4	
+伏	fuk1	
+椱	fuk1	
 伏	fuk2	
 匐	fuk2	
 箙	fuk2	
@@ -15407,7 +15407,7 @@ use_preset_vocabulary: true
 冹	fat1	
 沷	fat1	
 颰	fat1	
-佱	fap3	
+佱	fap1	
 乏	fap2	
 泛	fap2	0%
 姂	fap2	
@@ -17100,13 +17100,12 @@ use_preset_vocabulary: true
 吃	chyt1	
 抶	chyt1	
 池兒	chyw2	
-式	chyk4	
-埴	chyk4	
-幟	chyk4	
+式	chyk1	
+埴	chyk1	
+幟	chyk1	
 喫	chyk1	
 叱	chyk1	
 尺	chyk1	
-埴	chyk1	
 斥	chyk1	
 赤	chyk1	
 勅	chyk1	
@@ -17238,7 +17237,7 @@ use_preset_vocabulary: true
 齣	chut1	
 怵	chut1	
 㞮	chut1	
-辶	chuok4	
+辶	chuok1	
 啜	chuok1	
 戳	chuok1	
 綽	chuok1	
@@ -17931,7 +17930,7 @@ use_preset_vocabulary: true
 抄	cau1	
 操	cau1	
 幧	cau1	
-剎	cat4	
+剎	cat1	
 察	cat2	
 詧	cat2	
 擦	cat1	
@@ -18217,7 +18216,7 @@ use_preset_vocabulary: true
 袚	bot1	
 襏	bot1	
 驋	bot1	
-爆	bok4	0%
+爆	bok1	0%
 泊	bok2	
 薄	bok2	
 簿	bok2	
@@ -18937,7 +18936,7 @@ use_preset_vocabulary: true
 孢	bau1	
 𠅬	bau1	
 𨚔	bau1	
-八	bat3	
+八	bat1	
 抜	bat2	
 拔	bat2	
 菝	bat2	
@@ -18945,7 +18944,6 @@ use_preset_vocabulary: true
 八個	bat1 ge4	
 哵哵	bat1 bat1	
 捌	bat1	
-八	bat1	
 釟	bat1	
 仈	bat1	
 哵	bat1	
