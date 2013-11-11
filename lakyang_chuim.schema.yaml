@@ -6,7 +6,7 @@
 schema:
   schema_id: lakyang_chuim
   name: "洛陽註音 ₀.₉ᵦ"
-  version: "0.9β4"
+  version: "0.9β5"
   author:
     - Patrick <ipatrickmac@me.com>
   description: |
@@ -67,22 +67,13 @@ speller:
     - derive/^ngu([aeio])/w$1/
     - derive/^ng([aeou])/$1/
     - derive/^([wv])u([in]|ng)/$1e$2/
-    - derive/w([ue])i/wi/
     - derive/([zscr]h?)y([ptk]?)/$1$2/
     - derive/([w]?)ung/ong/
     - derive/wung/wong/
     - derive/yi?/i/
     - derive/^wu?/u/
-    - derive/iu/yu/
-    - derive/eo/oe/
-    - derive/eo/ea/
-    - derive/ai/ae/
     - derive/au/ao/
-    - derive/eu/w/
-    - derive/eu/ew/
-    - derive/eu/er/
     - derive/^([bpmfgkhy])uo/$1o/
-    - derive/([iy])uo/yo/
     - derive/([zcsjqx])([yi]u)(et)/$1y$3/
     - derive/^([bpmfdtnlgkhzcs]i|[jqx]i?)ou/$1o/
     - derive/([dtnlzcs]|ng)o/$1ou/
@@ -227,3 +218,11 @@ recognizer:
   patterns:
     reverse_lookup: "`[a-z]*$"
     punct: '^/[a-z]*$'
+
+simplifier:
+  opencc_config: dzing.ini
+  option_name: dzing
+  tip: all
+
+style:
+  font_face: sin mienglan
