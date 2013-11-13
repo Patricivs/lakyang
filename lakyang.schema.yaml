@@ -186,10 +186,6 @@ reverse_lookup:
 
 punctuator:
   import_preset: symbols
-  full_shape:
-    "=": ["＝", "=", "々", "〃"]
-  half_shape:
-    "=": ["=", "＝", "々", "〃"]
 
 key_binder:
   import_preset: default
@@ -207,7 +203,7 @@ recognizer:
   import_preset: default
   patterns:
     reverse_lookup: "`[a-z]*$"
-    punct: '^/[a-z]*$'
+    punct: '^/([A-Z|a-z]*|[0-9]|10)$'
 
 simplifier:
   opencc_config: dzing.ini
@@ -215,4 +211,4 @@ simplifier:
   tip: all
 
 style:
-  font_face: Meiryo
+  font_face: Sin Mienglan
