@@ -3,16 +3,14 @@
 # encoding: utf-8
 
 schema:
-  schema_id: lakyang   
-  name: "洛陽羅馬字 ₁.₀"
-  version: 1.1
+  schema_id: lakyang
+  name: "洛陽羅馬字 ₁.₂"
+  version: 1.2
   author:
     - "Patrick <ipatrickmac@me.com>"
   description: |
     洛陽羅馬字
     中原官話洛陽方言
-  dependencies:
-    - luna_pinyin
 
 switches:
   - name: ascii_mode
@@ -20,8 +18,14 @@ switches:
     states: ["中文", "西文"]
   - name: full_shape
     states: ["半角", "全角"]
-  - name: dzing
-    states: ["傳統", "自定"]
+#  - name: simplification
+#    states: [ 傳統, 簡化 ]
+  - options: [ zh_trad, dzing, nippon ]
+    states:
+      - 字形 → 傳統漢字
+      - 字形 → 叔寍正體
+      - 字形 → 日本新字形
+    reset: 0
 
 engine:
   processors:
@@ -46,7 +50,8 @@ engine:
     - reverse_lookup_translator
     - script_translator
   filters:
-    - simplifier
+    - simplifier@dzing
+    - simplifier@nippon
     - uniquifier
 
 speller:
@@ -176,13 +181,60 @@ custom_phrase:
   initial_quality: 1
 
 reverse_lookup:
-  dictionary: luna_pinyin
+  dictionary: stroke
   enable_completion: true
   prefix: "`"
   suffix: "'"
-  tips: "〔北京官話〕"
+  tips: 〔筆畫〕
   preedit_format:
-    - "xform/([nljqxy])v/$1ü/"
+    - xlit/hspnz/一丨丿丶乙/
+  comment_format:
+    - "xform ([aeo])([iu])([ptk]?)([1234]) $1$4$2$3"
+    - "xform ([aeiouyw])([rwmptk]?|ng?)([1234]) $1$3$2"
+    - "xform/c([aouw])/ç$1/"
+    - "xform/([zcçs])ue/$1üe/"
+    - "xform w1 ẅ"
+    - "xform w2 ẃ"
+    - "xform w3 ŵ"
+    - "xform w4 ẁ"
+    - "xform a1 ä"
+    - "xform a2 á"
+    - "xform a3 â"
+    - "xform a4 à"
+    - "xform e1 ë"
+    - "xform e2 é"
+    - "xform e3 ê"
+    - "xform e4 è"
+    - "xform o1 ö"
+    - "xform o2 ó"
+    - "xform o3 ô"
+    - "xform o4 ò"
+    - "xform i1 ï"
+    - "xform i2 í"
+    - "xform i3 î"
+    - "xform i4 ì"
+    - "xform u1 ü"
+    - "xform u2 ú"
+    - "xform u3 û"
+    - "xform u4 ù"
+    - "xform y1 ÿ"
+    - "xform y2 ý"
+    - "xform y3 ŷ"
+    - "xform y4 ỳ"
+    - "xform w1 ẅ"
+    - "xform w2 ẃ"
+    - "xform w3 ŵ"
+    - "xform w4 ẁ"
+
+dzing:
+  option_name: dzing
+  opencc_config: dzing.ini
+  tips: all
+
+nippon:
+  option_name: nippon
+  opencc_config: nippon.ini
+  tips: all
 
 punctuator:
   import_preset: symbols
@@ -200,15 +252,12 @@ key_binder:
     - { when: always, accept: Control+Shift+dollar, toggle: dzing }
 
 recognizer:
-  import_preset: default
   patterns:
-    reverse_lookup: "`[a-z]*$"
+    email: "^[a-z][-_.0-9a-z]*@.*$"
+    uppercase: "^[A-Z][-_+.'0-9A-Za-z]*$"
+    url: "^(www[.]|https?:|ftp:|mailto:).*$"
+    reverse_lookup: "`[a-z]*'?$"
     punct: '^/([A-Z|a-z]*|[0-9]|10)$'
-
-simplifier:
-  opencc_config: dzing.ini
-  option_name: dzing
-  tip: all
 
 style:
   font_face: Sin Mienglan
