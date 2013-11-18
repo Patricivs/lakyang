@@ -9,7 +9,7 @@
 
 ---
 name: lakyang
-version: "1.1"	#2013.11.2
+version: "1.2"	#2013.11.17
 surt: by_weight
 use_preset_vocabulary: true
 ...
@@ -9815,6 +9815,8 @@ use_preset_vocabulary: true
 弶	jiang4
 強	qiang1	0%
 強	qiang2
+强	qiang1
+强	qiang2
 絳	jiang4
 滰	jiang4
 犟	jiang4
