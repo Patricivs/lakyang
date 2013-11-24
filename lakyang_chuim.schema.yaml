@@ -1,4 +1,4 @@
-﻿# lakyang_chuim.schema.yaml
+# lakyang_chuim.schema.yaml
 # Rime schema
 # vim: set sw=2 sts=2 et:
 # encoding: utf-8
@@ -21,7 +21,7 @@ switches:
     states: ["半角", "全角"]
   - name: dzing
     states: ["傳統", "自定"]
-    
+
 engine:
   processors:
     - ascii_composer
@@ -60,30 +60,28 @@ speller:
     - derive/^ji?([aeou]?)/gi$1/
     - derive/^qi?([aeou]?)/ki$1/
     - derive/^xi?([aeou]?)/hi$1/
-    - derive/^([jqx])([aeou])/$1i$2/
+    - derive/^([jqx])([aeo])/$1i$2/
     - derive/^ngi/yi/
     - derive/^ngi([aeou])/y$1/
     - derive/^ng([u])/w$1/
     - derive/^ngu([aeio])/w$1/
-    - derive/^ng([aeou])/$1/
+    - derive/^ng([aeou]|yu)/$1/
     - derive/^([wv])u([in]|ng)/$1e$2/
     - derive/([zscr]h?)y([ptk]?)/$1$2/
     - derive/([w]?)ung/ong/
     - derive/wung/wong/
-    - derive/yi?/i/
-    - derive/^wu?/u/
+    - derive/wu/u/
     - derive/au/ao/
     - derive/^([bpmfgkhy])uo/$1o/
     - derive/([zcsjqx])([yi]u)(et)/$1y$3/
-    - derive/^([bpmfdtnlgkhzcs]i|[jqx]i?)ou/$1o/
     - derive/([dtnlzcs]|ng)o/$1ou/
     - "derive/^([a-z]+)\\d$/$1/"
     - "abbrev/^([zcs]h).+$/$1/"
     - "abbrev/^([a-z]).+$/$1/"
     - "xlit 1234 :/<\\"
-    - "derive/^(.*)<$/$1,/"	
-    - "derive/^(.*):$/$1;/"	
-    - "derive/^(.*):$/$1-/"	
+    - "derive/^(.*)<$/$1,/"
+    - "derive/^(.*):$/$1;/"
+    - "derive/^(.*):$/$1-/"
 
 translator:
   dictionary: lakyang
@@ -92,7 +90,6 @@ translator:
   preedit_format:
     - xform/'/ /
     - xform/([aeiou]|yu)h/$1=/
-    - xform/(wo)w/uau/
     - xform/wu/u/
     - xform/w?([ou])ng/uG/
     - xform/w([aou])/u$1/
@@ -100,7 +97,7 @@ translator:
     - xform/ang/K/
     - xform/eng/G/
     - xform/([iuY])ng/$1G/
-    - xform/([iy])ou/iU/
+    - xform/[yo|i]u/iU/
     - xform/yo([k]?)/Yo$1/
     - xform/([zcsjqx])yet/$1Yet/
     - xform/([jqx])u/$1Y/
