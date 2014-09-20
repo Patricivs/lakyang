@@ -1812,6 +1812,7 @@ use_preset_vocabulary: true
 嘽	tan1
 嘿	hwh	0%
 嘿	hwk1
+嘿	hek1
 噀	xun4
 噁	ek1
 噁	wu4
@@ -2320,7 +2321,7 @@ use_preset_vocabulary: true
 夜兒黑	yew4 hwk1
 夜日	yew4
 夜日黑	yew4 hwk1
-夜黑	yew4 hwk1
+夜黑	ye4 hwk1
 夝	cing2
 夡	qi4
 夢	meng2	0%
@@ -14603,7 +14604,9 @@ use_preset_vocabulary: true
 黐	chy1
 黐	li2
 黑	hwk1
+黑	hek1
 黒	hwk1
+黒	hek1
 黔	qiam2
 黔	qin2
 黕	tam3
@@ -16678,6 +16681,7 @@ use_preset_vocabulary: true
 潵	sa3	50%
 潵	san4	50%
 潶	hwk1
+潶	hek1
 潷	bit1
 潿	wi2
 澅	hua4
@@ -18682,7 +18686,8 @@ use_preset_vocabulary: true
 㨣	wung1
 㨧	ben4
 㩏	hwk1
-㩏撈	hwk1 lau1
+㩏	hek1
+㩏撈
 㩼	zy1
 㩿	kut1
 㪇	sian4
